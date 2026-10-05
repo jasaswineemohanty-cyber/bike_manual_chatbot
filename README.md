@@ -1,8 +1,8 @@
 # Bike Manual Troubleshooter
 
-A small Streamlit assignment that searches uploaded bike owner/service manuals and answers from the retrieved passages. A multilingual FastEmbed model creates passage and query embeddings, Chroma performs cosine-similarity search, and Gemma 4 31B served through Sarvam re-ranks the closest passages and rephrases supported information with passage citations. Original manual excerpts remain visible for verification. If no sufficiently similar or supporting passage is found, it abstains.
+A small Streamlit assignment that searches uploaded bike owner/service manuals and answers from the retrieved passages. A multilingual FastEmbed model creates passage and query embeddings, Chroma performs cosine-similarity search, and `sarvam 105b` served through Sarvam re-ranks the closest passages and rephrases supported information with passage citations. Original manual excerpts remain visible for verification. If no sufficiently similar or supporting passage is found, it abstains.
 
-Optional bike photos are analyzed with Sarvam's `sarvam 105b` image input only to add visible terms to the manual search. Image analysis is not presented as a diagnosis or answer.
+Optional bike photos are analyzed with `sarvam 105b` image input only to add visible terms to the manual search. Image analysis is not presented as a diagnosis or answer.
 
 ## Run locally
 
